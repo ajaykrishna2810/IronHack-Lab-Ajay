@@ -1,5 +1,5 @@
 # Query 1
-select client_id  from bank.client where district_id = 1 limit 5; # selecting the fisrt 5 client_id for which the district id equals 1
+select client_id  from bank.client where district_id = 1 limit 5; # selecting the first 5 client_id for which the district id equals 1
 
 # Query 2
 select client_id from  bank.client where district_id = 72 order by client_id desc limit 1; # selectng the client_id table in descending order and then limiting it with 1. 
