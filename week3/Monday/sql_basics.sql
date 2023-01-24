@@ -27,7 +27,7 @@ select account_id from bank.loan where duration = 60 order by amount limit 5;
 # Query 8
 # What are the unique values of k_symbol in the order table?
 # Note: There shouldn't be a table name order, since order is reserved from the ORDER BY clause. You have to use backticks to escape the order table name.
-select distinct k_symbol from bank.`order` order by k_symbol;
+select distinct k_symbol from bank.`order` where k_symbol <>""; # the syntax -- where k_symbol <>"" -- avoids the empty string in the output of k_string
 
 # Query 9
 # In the order table, what are the order_ids of the client with the account_id 34?
@@ -35,7 +35,7 @@ select order_id from bank.`order` where account_id = 34;
 
 # Query 10
 # In the order table, which account_ids were responsible for orders between order_id 29540 and order_id 29560 (inclusive)?
-select distinct account_id from bank.order where  order_id >= 29540  and order_id <= 29560;
+select distinct account_id from bank.order where  order_id >= 29540  and order_id <= 29560; # another idea: where  order_id between 29540 and 29560    (between is inclusive)
 
 # Query 11
 # In the order table, what are the individual amounts that were sent to (account_to) id 30067122?
@@ -49,7 +49,7 @@ select trans_id, `date`, `type`, amount as table_subset from bank.trans where ac
 
 # Query 13
 # In the client table, of all districts with a district_id lower than 10, how many clients are from each district_id? Show the results sorted by the district_id in ascending order.
-select  count(client_id)  from bank.client  
+select  district_id, count(client_id)  from bank.client  
 where district_id < 10 group by district_id order by district_id;
 
 # Query 14
@@ -67,6 +67,8 @@ select `date`, count(loan_id) from bank.loan where `date` < 930907 group by `dat
 # Query 17
 # In the loan table, for each day in December 1997, count the number of loans issued for each unique loan duration, ordered by date and duration, both in ascending order. 
 # You can ignore days without any loans in your output.
-select `date`, duration, count(loan_id) from bank.loan where `date` <= 971231 and `date` >= 971201 group by duration, `date` order by  `date` asc; 
+select `date`, duration, count(loan_id) from bank.loan where `date` <= 971231 and `date` >= 971201 group by duration, `date` order by  duration, `date` asc; 
+#select  duration, 'date', count(loan_id)  from bank.loan where 'date' like '9712%' group by duration, `date` order by  duration, `date` asc; 
+
 
 # Query 18
