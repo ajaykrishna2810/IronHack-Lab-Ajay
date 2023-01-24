@@ -68,3 +68,5 @@ select `date`, count(loan_id) from bank.loan where `date` < 930907 group by `dat
 # In the loan table, for each day in December 1997, count the number of loans issued for each unique loan duration, ordered by date and duration, both in ascending order. 
 # You can ignore days without any loans in your output.
 select `date`, duration, count(loan_id) from bank.loan where `date` <= 971231 and `date` >= 971201 group by duration, `date` order by  `date` asc; 
+
+# Query 18
