@@ -62,3 +62,12 @@ select address from address
 left outer join customer
 using (address_id)
 where address like '%e' and customer.customer_id is Null;
+
+## Optional:  what is the most rented film?
+select distinct title, count(film_id) from film
+join inventory
+using (film_id)
+join rental
+using (inventory_id)
+group by film_id
+order by count(film_id) desc limit 1;
