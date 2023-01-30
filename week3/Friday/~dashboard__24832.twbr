@@ -1,0 +1,1921 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <DashboardGridOverlay />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Orders+ (Sample - Superstore)' inline='true' name='federated.03yp4jl1kgd5od12dei860zn8xe7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sample - Superstore' name='excel-direct.0jypxeg1jam52v1atj8oz0wugxwz'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ajayk/Desktop/IronHack-Lab-Ajay/week3/Friday/Sample - Superstore.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0jypxeg1jam52v1atj8oz0wugxwz' name='Orders' table='[Orders$]' type='table'>
+          <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Row ID' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Order Date' ordinal='2' />
+            <column datatype='date' name='Ship Date' ordinal='3' />
+            <column datatype='string' name='Ship Mode' ordinal='4' />
+            <column datatype='string' name='Customer ID' ordinal='5' />
+            <column datatype='string' name='Customer Name' ordinal='6' />
+            <column datatype='string' name='Segment' ordinal='7' />
+            <column datatype='string' name='Country' ordinal='8' />
+            <column datatype='string' name='City' ordinal='9' />
+            <column datatype='string' name='State' ordinal='10' />
+            <column datatype='integer' name='Postal Code' ordinal='11' />
+            <column datatype='string' name='Region' ordinal='12' />
+            <column datatype='string' name='Product ID' ordinal='13' />
+            <column datatype='string' name='Category' ordinal='14' />
+            <column datatype='string' name='Sub-Category' ordinal='15' />
+            <column datatype='string' name='Product Name' ordinal='16' />
+            <column datatype='real' name='Sales' ordinal='17' />
+            <column datatype='integer' name='Quantity' ordinal='18' />
+            <column datatype='real' name='Discount' ordinal='19' />
+            <column datatype='real' name='Profit' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.0jypxeg1jam52v1atj8oz0wugxwz' name='Orders' table='[Orders$]' type='table'>
+            <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Row ID' ordinal='0' />
+              <column datatype='string' name='Order ID' ordinal='1' />
+              <column datatype='date' name='Order Date' ordinal='2' />
+              <column datatype='date' name='Ship Date' ordinal='3' />
+              <column datatype='string' name='Ship Mode' ordinal='4' />
+              <column datatype='string' name='Customer ID' ordinal='5' />
+              <column datatype='string' name='Customer Name' ordinal='6' />
+              <column datatype='string' name='Segment' ordinal='7' />
+              <column datatype='string' name='Country' ordinal='8' />
+              <column datatype='string' name='City' ordinal='9' />
+              <column datatype='string' name='State' ordinal='10' />
+              <column datatype='integer' name='Postal Code' ordinal='11' />
+              <column datatype='string' name='Region' ordinal='12' />
+              <column datatype='string' name='Product ID' ordinal='13' />
+              <column datatype='string' name='Category' ordinal='14' />
+              <column datatype='string' name='Sub-Category' ordinal='15' />
+              <column datatype='string' name='Product Name' ordinal='16' />
+              <column datatype='real' name='Sales' ordinal='17' />
+              <column datatype='integer' name='Quantity' ordinal='18' />
+              <column datatype='real' name='Discount' ordinal='19' />
+              <column datatype='real' name='Profit' ordinal='20' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0jypxeg1jam52v1atj8oz0wugxwz' name='People' table='[People$]' type='table'>
+            <columns gridOrigin='A1:B5:no:A1:B5:0' header='yes' outcome='6'>
+              <column datatype='string' name='Person' ordinal='0' />
+              <column datatype='string' name='Region' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0jypxeg1jam52v1atj8oz0wugxwz' name='Returns' table='[Returns$]' type='table'>
+            <columns gridOrigin='A1:B297:no:A1:B297:0' header='yes' outcome='6'>
+              <column datatype='string' name='Returned' ordinal='0' />
+              <column datatype='string' name='Order ID' ordinal='1' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Category]' value='[Orders].[Category]' />
+          <map key='[City]' value='[Orders].[City]' />
+          <map key='[Country]' value='[Orders].[Country]' />
+          <map key='[Customer ID]' value='[Orders].[Customer ID]' />
+          <map key='[Customer Name]' value='[Orders].[Customer Name]' />
+          <map key='[Discount]' value='[Orders].[Discount]' />
+          <map key='[Order Date]' value='[Orders].[Order Date]' />
+          <map key='[Order ID (Returns)]' value='[Returns].[Order ID]' />
+          <map key='[Order ID]' value='[Orders].[Order ID]' />
+          <map key='[Person]' value='[People].[Person]' />
+          <map key='[Postal Code]' value='[Orders].[Postal Code]' />
+          <map key='[Product ID]' value='[Orders].[Product ID]' />
+          <map key='[Product Name]' value='[Orders].[Product Name]' />
+          <map key='[Profit]' value='[Orders].[Profit]' />
+          <map key='[Quantity]' value='[Orders].[Quantity]' />
+          <map key='[Region (People)]' value='[People].[Region]' />
+          <map key='[Region]' value='[Orders].[Region]' />
+          <map key='[Returned]' value='[Returns].[Returned]' />
+          <map key='[Row ID]' value='[Orders].[Row ID]' />
+          <map key='[Sales]' value='[Orders].[Sales]' />
+          <map key='[Segment]' value='[Orders].[Segment]' />
+          <map key='[Ship Date]' value='[Orders].[Ship Date]' />
+          <map key='[Ship Mode]' value='[Orders].[Ship Mode]' />
+          <map key='[State]' value='[Orders].[State]' />
+          <map key='[Sub-Category]' value='[Orders].[Sub-Category]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U9995:no:A1:U9995:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[People]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B5:no:A1:B5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Returns]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B297:no:A1:B297:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Row ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Row ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Row ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Ship Date]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship Mode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ship Mode]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Ship Mode</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product ID]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub-Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sub-Category]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sub-Category</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discount]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Discount</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_79887BAFECC549EC8293B3B8476F1764]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Person</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Person]</local-name>
+            <parent-name>[People]</parent-name>
+            <remote-alias>Person</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[People_7BEF6AE0509F48A0A22819497387E4A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region (People)]</local-name>
+            <parent-name>[People]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[People_7BEF6AE0509F48A0A22819497387E4A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Returned</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Returned]</local-name>
+            <parent-name>[Returns]</parent-name>
+            <remote-alias>Returned</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Returns_5C50D6E298E84E5B8A75F45999A0010A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order ID (Returns)]</local-name>
+            <parent-name>[Returns]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Returns_5C50D6E298E84E5B8A75F45999A0010A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='None' datatype='integer' name='[Profit (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[Profit]' peg='0' size='283' />
+      </column>
+      <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Row ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Orders' datatype='table' name='[__tableau_internal_object_id__].[Orders_79887BAFECC549EC8293B3B8476F1764]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='People' datatype='table' name='[__tableau_internal_object_id__].[People_7BEF6AE0509F48A0A22819497387E4A4]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Returns' datatype='table' name='[__tableau_internal_object_id__].[Returns_5C50D6E298E84E5B8A75F45999A0010A]' role='measure' type='quantitative' />
+      <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Customer Name:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Tamara Chand&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bill Shonely&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Keith Dawkins&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Orders' id='Orders_79887BAFECC549EC8293B3B8476F1764'>
+            <properties context=''>
+              <relation connection='excel-direct.0jypxeg1jam52v1atj8oz0wugxwz' name='Orders' table='[Orders$]' type='table'>
+                <columns gridOrigin='A1:U9995:no:A1:U9995:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Row ID' ordinal='0' />
+                  <column datatype='string' name='Order ID' ordinal='1' />
+                  <column datatype='date' name='Order Date' ordinal='2' />
+                  <column datatype='date' name='Ship Date' ordinal='3' />
+                  <column datatype='string' name='Ship Mode' ordinal='4' />
+                  <column datatype='string' name='Customer ID' ordinal='5' />
+                  <column datatype='string' name='Customer Name' ordinal='6' />
+                  <column datatype='string' name='Segment' ordinal='7' />
+                  <column datatype='string' name='Country' ordinal='8' />
+                  <column datatype='string' name='City' ordinal='9' />
+                  <column datatype='string' name='State' ordinal='10' />
+                  <column datatype='integer' name='Postal Code' ordinal='11' />
+                  <column datatype='string' name='Region' ordinal='12' />
+                  <column datatype='string' name='Product ID' ordinal='13' />
+                  <column datatype='string' name='Category' ordinal='14' />
+                  <column datatype='string' name='Sub-Category' ordinal='15' />
+                  <column datatype='string' name='Product Name' ordinal='16' />
+                  <column datatype='real' name='Sales' ordinal='17' />
+                  <column datatype='integer' name='Quantity' ordinal='18' />
+                  <column datatype='real' name='Discount' ordinal='19' />
+                  <column datatype='real' name='Profit' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='People' id='People_7BEF6AE0509F48A0A22819497387E4A4'>
+            <properties context=''>
+              <relation connection='excel-direct.0jypxeg1jam52v1atj8oz0wugxwz' name='People' table='[People$]' type='table'>
+                <columns gridOrigin='A1:B5:no:A1:B5:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Person' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Returns' id='Returns_5C50D6E298E84E5B8A75F45999A0010A'>
+            <properties context=''>
+              <relation connection='excel-direct.0jypxeg1jam52v1atj8oz0wugxwz' name='Returns' table='[Returns$]' type='table'>
+                <columns gridOrigin='A1:B297:no:A1:B297:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Returned' ordinal='0' />
+                  <column datatype='string' name='Order ID' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Region]' />
+              <expression op='[Region (People)]' />
+            </expression>
+            <first-end-point object-id='Orders_79887BAFECC549EC8293B3B8476F1764' />
+            <second-end-point object-id='People_7BEF6AE0509F48A0A22819497387E4A4' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Order ID]' />
+              <expression op='[Order ID (Returns)]' />
+            </expression>
+            <first-end-point object-id='Orders_79887BAFECC549EC8293B3B8476F1764' />
+            <second-end-point object-id='Returns_5C50D6E298E84E5B8A75F45999A0010A' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Profit</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders+ (Sample - Superstore)' name='federated.03yp4jl1kgd5od12dei860zn8xe7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03yp4jl1kgd5od12dei860zn8xe7'>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Year' name='[yr:Order Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03yp4jl1kgd5od12dei860zn8xe7].[sum:Profit:qk]</rows>
+        <cols>[federated.03yp4jl1kgd5od12dei860zn8xe7].[yr:Order Date:ok]</cols>
+      </table>
+      <simple-id uuid='{4587D22C-6228-4AC0-8B5F-1C566764A52E}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sales</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders+ (Sample - Superstore)' name='federated.03yp4jl1kgd5od12dei860zn8xe7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03yp4jl1kgd5od12dei860zn8xe7'>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Year' name='[yr:Order Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03yp4jl1kgd5od12dei860zn8xe7].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03yp4jl1kgd5od12dei860zn8xe7].[sum:Sales:qk]</rows>
+        <cols>[federated.03yp4jl1kgd5od12dei860zn8xe7].[yr:Order Date:ok]</cols>
+      </table>
+      <simple-id uuid='{588ABC23-00DF-45D4-B02F-D530C92FC207}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Discount</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders+ (Sample - Superstore)' name='federated.03yp4jl1kgd5od12dei860zn8xe7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03yp4jl1kgd5od12dei860zn8xe7'>
+            <column datatype='real' name='[Discount]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Discount]' derivation='Sum' name='[sum:Discount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Year' name='[yr:Order Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03yp4jl1kgd5od12dei860zn8xe7].[sum:Discount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03yp4jl1kgd5od12dei860zn8xe7].[sum:Discount:qk]</rows>
+        <cols>[federated.03yp4jl1kgd5od12dei860zn8xe7].[yr:Order Date:ok]</cols>
+      </table>
+      <simple-id uuid='{3951A1B7-B767-4686-9BDD-C27FC5DF1BDD}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Quarterly sales </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders+ (Sample - Superstore)' name='federated.03yp4jl1kgd5od12dei860zn8xe7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03yp4jl1kgd5od12dei860zn8xe7'>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Quarter-Trunc' name='[tqr:Order Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03yp4jl1kgd5od12dei860zn8xe7].[sum:Sales:qk]</rows>
+        <cols>[federated.03yp4jl1kgd5od12dei860zn8xe7].[tqr:Order Date:qk]</cols>
+      </table>
+      <simple-id uuid='{9BD564F9-DD80-493C-8272-94FC55B8F19A}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Quarterly profit </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders+ (Sample - Superstore)' name='federated.03yp4jl1kgd5od12dei860zn8xe7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03yp4jl1kgd5od12dei860zn8xe7'>
+            <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order Date]' derivation='Quarter-Trunc' name='[tqr:Order Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.03yp4jl1kgd5od12dei860zn8xe7].[sum:Profit:qk]</rows>
+        <cols>[federated.03yp4jl1kgd5od12dei860zn8xe7].[tqr:Order Date:qk]</cols>
+      </table>
+      <simple-id uuid='{75EB2AE7-104E-4D47-B818-D9AB9FC7250B}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 3 customers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders+ (Sample - Superstore)' name='federated.03yp4jl1kgd5od12dei860zn8xe7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03yp4jl1kgd5od12dei860zn8xe7'>
+            <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Segment]' role='dimension' type='nominal' />
+            <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Segment]' derivation='None' name='[none:Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Customer Name:nk]'>
+            <groupfilter count='3' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Profit])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Aaron Hawkins&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Aaron Smayling&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Adam Hart&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Alan Haines&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Alan Schoenberger&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Alejandro Savely&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Aleksandra Gannaway&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Alex Russell&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Alice McCarthy&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Allen Rosenblatt&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Alyssa Crouse&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Andrew Gjertsen&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Andy Gerbode&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Andy Yotov&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Ann Blume&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Ann Chong&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Anna Häberlin&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Anthony Jacobs&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Anthony Johnson&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Anthony O&apos;Donnell&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Anthony Rawles&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Barbara Fisher&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Barry Blumstein&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Barry Französisch&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Barry Pond&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Bart Pistole&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Bart Watters&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Ben Peterman&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Benjamin Venier&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Beth Fritzler&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Bill Overfelt&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Bill Shonely&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Bill Stewart&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Bill Tyler&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Brad Norvell&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Brenda Bowman&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Brendan Murry&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Brendan Sweed&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Brian Moss&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Brooke Gillingham&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Candace McMahon&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Cari Sayre&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Carl Jackson&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Carol Adams&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Cathy Prescott&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Charles Sheldon&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Chris Selesnick&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Christine Abelman&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Christine Phan&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Cindy Schnelling&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Claudia Bergmann&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Corey Catlett&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Craig Molinari&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Craig Yedwab&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Cyma Kinney&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Cynthia Voltz&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Damala Kotsonis&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Dan Reichenbach&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Dario Medina&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Darren Budd&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Darrin Van Huff&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Dave Hallsten&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Dave Poirier&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;David Bremer&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;David Kendrick&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;David Smith&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;David Wiener&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Dean Katz&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Deirdre Greer&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Denise Monton&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Denny Joy&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Dionis Lloyd&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Don Jones&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Don Miller&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Dorothy Badders&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Dorothy Wardle&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Dorris liebe&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Ed Braxton&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Edward Becker&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Edward Hooks&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Eleni McCrary&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Elizabeth Moffitt&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Ellis Ballard&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Elpida Rittenbach&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Erica Bern&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Erin Ashbrook&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Erin Smith&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Eudokia Martin&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Filia McAdams&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Frank Atkinson&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Frank Hawley&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Fred Chung&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Fred Hopkins&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Fred Wasserman&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Gene Hale&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;George Bell&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;George Zrebassa&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Georgia Rosenberg&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Giulietta Dortch&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Grace Kelly&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Grant Thornton&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Greg Guthrie&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Greg Maxwell&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Guy Phonely&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Harold Engle&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Harold Ryan&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Harry Marie&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Heather Kirkland&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Helen Wasserman&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Henry Goldwyn&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Hilary Holden&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Jack O&apos;Briant&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Jane Waco&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Janet Molinari&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Jason Gross&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Jason Klamczynski&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Jennifer Braxton&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Jennifer Patt&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Jill Stevenson&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Jim Epp&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Jim Mitchum&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Jim Sink&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;John Grady&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Jonathan Doherty&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Julie Creighton&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Justin Deggeller&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Justin Ellison&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Justin Ritter&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Kalyca Meade&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Karen Bern&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Karen Carlisle&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Karen Seio&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Katharine Harms&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Katherine Nockton&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Katrina Edelman&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Kean Nguyen&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Keith Dawkins&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Kelly Lampkin&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Ken Black&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Ken Brennan&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Ken Dana&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Ken Heidel&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Kimberly Carter&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Kristen Hastings&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Laura Armstrong&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Laurel Workman&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Lela Donovan&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Linda Cazamias&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Linda Southworth&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Lindsay Williams&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Lisa Ryan&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Lori Olson&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Luke Schmidt&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Maribeth Yedwab&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Marina Lichtenstein&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Mark Cousins&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Mark Haberlin&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Mary Zewe&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Matt Collister&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Matt Connell&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Matt Hagelstein&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Matthew Clasen&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Maureen Fritzler&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Maya Herman&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Michael Dominguez&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Michael Kennedy&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Michael Paige&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Michael Stewart&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Michelle Ellison&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Michelle Lonsdale&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Mike Caudle&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Mitch Gastineau&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Mitch Willingham&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Monica Federle&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Muhammed MacIntyre&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Muhammed Yedwab&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Nat Gilpin&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Neil Ducich&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Nick Crebassa&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Nicole Brennan&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Nicole Hansen&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Noah Childs&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Noel Staavos&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Nona Balk&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Odella Nelson&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Pamela Coakley&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Patrick Jones&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Pauline Webber&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Phillip Breyer&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Quincy Jones&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Rachel Payne&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Randy Ferguson&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Ricardo Sperren&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Rick Reed&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Rick Wilson&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Rob Williams&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Robert Barroso&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Roland Schwarz&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Roy Phan&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Ruben Ausman&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Sally Hughsby&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Saphhira Shifley&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Scot Coram&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Scott Cohen&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Sean Braxton&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Shaun Chance&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Sibella Parks&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Stefania Perrino&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Stefanie Holloman&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Stephanie Phelps&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Steve Chapman&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Steven Ward&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Stewart Carmichael&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Stuart Van&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Sung Pak&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Susan Gilcrest&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Suzanne McNair&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Sylvia Foulston&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Tamara Chand&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Thea Hudgings&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Theresa Coyne&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Theresa Swint&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Thomas Boland&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Thomas Seio&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Tiffany House&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Tim Taslimi&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Todd Boyes&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Todd Sumrall&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Tom Stivers&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Tracy Poddar&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Victoria Brennan&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Victoria Pisteka&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Victoria Wilson&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Vivek Grady&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Yana Sorensen&quot;' />
+                  <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Yoseph Carroll&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Customer Name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Tamara Chand&quot;</bucket>
+              <bucket>&quot;Keith Dawkins&quot;</bucket>
+              <bucket>&quot;Bill Shonely&quot;</bucket>
+              <bucket>&quot;Harry Marie&quot;</bucket>
+              <bucket>&quot;Todd Sumrall&quot;</bucket>
+              <bucket>&quot;Brian Moss&quot;</bucket>
+              <bucket>&quot;Jane Waco&quot;</bucket>
+              <bucket>&quot;Helen Wasserman&quot;</bucket>
+              <bucket>&quot;Laura Armstrong&quot;</bucket>
+              <bucket>&quot;Fred Hopkins&quot;</bucket>
+              <bucket>&quot;Mark Cousins&quot;</bucket>
+              <bucket>&quot;Yana Sorensen&quot;</bucket>
+              <bucket>&quot;Mitch Willingham&quot;</bucket>
+              <bucket>&quot;Dan Reichenbach&quot;</bucket>
+              <bucket>&quot;Jim Epp&quot;</bucket>
+              <bucket>&quot;Justin Deggeller&quot;</bucket>
+              <bucket>&quot;Rick Wilson&quot;</bucket>
+              <bucket>&quot;Grace Kelly&quot;</bucket>
+              <bucket>&quot;Edward Hooks&quot;</bucket>
+              <bucket>&quot;Denise Monton&quot;</bucket>
+              <bucket>&quot;Nick Crebassa&quot;</bucket>
+              <bucket>&quot;Yoseph Carroll&quot;</bucket>
+              <bucket>&quot;Anna Häberlin&quot;</bucket>
+              <bucket>&quot;Ruben Ausman&quot;</bucket>
+              <bucket>&quot;Kristen Hastings&quot;</bucket>
+              <bucket>&quot;Roland Schwarz&quot;</bucket>
+              <bucket>&quot;Quincy Jones&quot;</bucket>
+              <bucket>&quot;Harold Ryan&quot;</bucket>
+              <bucket>&quot;Dave Hallsten&quot;</bucket>
+              <bucket>&quot;Anthony Johnson&quot;</bucket>
+              <bucket>&quot;Carol Adams&quot;</bucket>
+              <bucket>&quot;Frank Hawley&quot;</bucket>
+              <bucket>&quot;Jonathan Doherty&quot;</bucket>
+              <bucket>&quot;Claudia Bergmann&quot;</bucket>
+              <bucket>&quot;Brenda Bowman&quot;</bucket>
+              <bucket>&quot;Heather Kirkland&quot;</bucket>
+              <bucket>&quot;Bart Watters&quot;</bucket>
+              <bucket>&quot;Damala Kotsonis&quot;</bucket>
+              <bucket>&quot;Thomas Seio&quot;</bucket>
+              <bucket>&quot;Karen Carlisle&quot;</bucket>
+              <bucket>&quot;Thomas Boland&quot;</bucket>
+              <bucket>&quot;George Zrebassa&quot;</bucket>
+              <bucket>&quot;Pauline Webber&quot;</bucket>
+              <bucket>&quot;Justin Ellison&quot;</bucket>
+              <bucket>&quot;Mary Zewe&quot;</bucket>
+              <bucket>&quot;Karen Bern&quot;</bucket>
+              <bucket>&quot;Nicole Hansen&quot;</bucket>
+              <bucket>&quot;Chris Selesnick&quot;</bucket>
+              <bucket>&quot;Ken Heidel&quot;</bucket>
+              <bucket>&quot;Rick Reed&quot;</bucket>
+              <bucket>&quot;Alan Schoenberger&quot;</bucket>
+              <bucket>&quot;Fred Chung&quot;</bucket>
+              <bucket>&quot;Rob Williams&quot;</bucket>
+              <bucket>&quot;Marina Lichtenstein&quot;</bucket>
+              <bucket>&quot;Elizabeth Moffitt&quot;</bucket>
+              <bucket>&quot;Scott Cohen&quot;</bucket>
+              <bucket>&quot;Lindsay Williams&quot;</bucket>
+              <bucket>&quot;Ellis Ballard&quot;</bucket>
+              <bucket>&quot;Michael Paige&quot;</bucket>
+              <bucket>&quot;Kalyca Meade&quot;</bucket>
+              <bucket>&quot;Randy Ferguson&quot;</bucket>
+              <bucket>&quot;Ricardo Sperren&quot;</bucket>
+              <bucket>&quot;Steve Chapman&quot;</bucket>
+              <bucket>&quot;Roy Phan&quot;</bucket>
+              <bucket>&quot;Suzanne McNair&quot;</bucket>
+              <bucket>&quot;Jack O&apos;Briant&quot;</bucket>
+              <bucket>&quot;Ken Black&quot;</bucket>
+              <bucket>&quot;Sung Pak&quot;</bucket>
+              <bucket>&quot;Dave Poirier&quot;</bucket>
+              <bucket>&quot;Deirdre Greer&quot;</bucket>
+              <bucket>&quot;Sally Hughsby&quot;</bucket>
+              <bucket>&quot;Sylvia Foulston&quot;</bucket>
+              <bucket>&quot;Ken Dana&quot;</bucket>
+              <bucket>&quot;Frank Atkinson&quot;</bucket>
+              <bucket>&quot;Janet Molinari&quot;</bucket>
+              <bucket>&quot;Anthony Rawles&quot;</bucket>
+              <bucket>&quot;Denny Joy&quot;</bucket>
+              <bucket>&quot;Monica Federle&quot;</bucket>
+              <bucket>&quot;Katharine Harms&quot;</bucket>
+              <bucket>&quot;Justin Ritter&quot;</bucket>
+              <bucket>&quot;Neil Ducich&quot;</bucket>
+              <bucket>&quot;Patrick Jones&quot;</bucket>
+              <bucket>&quot;Scot Coram&quot;</bucket>
+              <bucket>&quot;Bart Pistole&quot;</bucket>
+              <bucket>&quot;Jennifer Patt&quot;</bucket>
+              <bucket>&quot;Cathy Prescott&quot;</bucket>
+              <bucket>&quot;Katrina Edelman&quot;</bucket>
+              <bucket>&quot;Brendan Sweed&quot;</bucket>
+              <bucket>&quot;Shaun Chance&quot;</bucket>
+              <bucket>&quot;Victoria Brennan&quot;</bucket>
+              <bucket>&quot;Aaron Hawkins&quot;</bucket>
+              <bucket>&quot;Ben Peterman&quot;</bucket>
+              <bucket>&quot;Georgia Rosenberg&quot;</bucket>
+              <bucket>&quot;Alejandro Savely&quot;</bucket>
+              <bucket>&quot;Don Jones&quot;</bucket>
+              <bucket>&quot;Saphhira Shifley&quot;</bucket>
+              <bucket>&quot;Corey Catlett&quot;</bucket>
+              <bucket>&quot;Maribeth Yedwab&quot;</bucket>
+              <bucket>&quot;Benjamin Venier&quot;</bucket>
+              <bucket>&quot;Nat Gilpin&quot;</bucket>
+              <bucket>&quot;Barry Französisch&quot;</bucket>
+              <bucket>&quot;Ann Chong&quot;</bucket>
+              <bucket>&quot;Andrew Gjertsen&quot;</bucket>
+              <bucket>&quot;Ken Brennan&quot;</bucket>
+              <bucket>&quot;Matt Collister&quot;</bucket>
+              <bucket>&quot;Linda Cazamias&quot;</bucket>
+              <bucket>&quot;Adam Hart&quot;</bucket>
+              <bucket>&quot;Bill Overfelt&quot;</bucket>
+              <bucket>&quot;Harold Engle&quot;</bucket>
+              <bucket>&quot;Pamela Coakley&quot;</bucket>
+              <bucket>&quot;Todd Boyes&quot;</bucket>
+              <bucket>&quot;Stephanie Phelps&quot;</bucket>
+              <bucket>&quot;Theresa Coyne&quot;</bucket>
+              <bucket>&quot;Theresa Swint&quot;</bucket>
+              <bucket>&quot;Stefanie Holloman&quot;</bucket>
+              <bucket>&quot;Bill Tyler&quot;</bucket>
+              <bucket>&quot;David Kendrick&quot;</bucket>
+              <bucket>&quot;Filia McAdams&quot;</bucket>
+              <bucket>&quot;Erin Smith&quot;</bucket>
+              <bucket>&quot;Christine Abelman&quot;</bucket>
+              <bucket>&quot;Luke Schmidt&quot;</bucket>
+              <bucket>&quot;Eudokia Martin&quot;</bucket>
+              <bucket>&quot;Maya Herman&quot;</bucket>
+              <bucket>&quot;Giulietta Dortch&quot;</bucket>
+              <bucket>&quot;Barbara Fisher&quot;</bucket>
+              <bucket>&quot;Candace McMahon&quot;</bucket>
+              <bucket>&quot;Darren Budd&quot;</bucket>
+              <bucket>&quot;Dean Katz&quot;</bucket>
+              <bucket>&quot;Barry Pond&quot;</bucket>
+              <bucket>&quot;John Grady&quot;</bucket>
+              <bucket>&quot;Julie Creighton&quot;</bucket>
+              <bucket>&quot;Don Miller&quot;</bucket>
+              <bucket>&quot;Stuart Van&quot;</bucket>
+              <bucket>&quot;Matt Connell&quot;</bucket>
+              <bucket>&quot;Alice McCarthy&quot;</bucket>
+              <bucket>&quot;Greg Maxwell&quot;</bucket>
+              <bucket>&quot;Cari Sayre&quot;</bucket>
+              <bucket>&quot;Craig Molinari&quot;</bucket>
+              <bucket>&quot;Dorris liebe&quot;</bucket>
+              <bucket>&quot;David Smith&quot;</bucket>
+              <bucket>&quot;Erica Bern&quot;</bucket>
+              <bucket>&quot;Kimberly Carter&quot;</bucket>
+              <bucket>&quot;Jennifer Braxton&quot;</bucket>
+              <bucket>&quot;Anthony Jacobs&quot;</bucket>
+              <bucket>&quot;Lori Olson&quot;</bucket>
+              <bucket>&quot;Tracy Poddar&quot;</bucket>
+              <bucket>&quot;Michelle Lonsdale&quot;</bucket>
+              <bucket>&quot;Matt Hagelstein&quot;</bucket>
+              <bucket>&quot;Mike Caudle&quot;</bucket>
+              <bucket>&quot;Nona Balk&quot;</bucket>
+              <bucket>&quot;Jim Mitchum&quot;</bucket>
+              <bucket>&quot;Kean Nguyen&quot;</bucket>
+              <bucket>&quot;Charles Sheldon&quot;</bucket>
+              <bucket>&quot;Dorothy Badders&quot;</bucket>
+              <bucket>&quot;Dario Medina&quot;</bucket>
+              <bucket>&quot;Brooke Gillingham&quot;</bucket>
+              <bucket>&quot;Michelle Ellison&quot;</bucket>
+              <bucket>&quot;Andy Yotov&quot;</bucket>
+              <bucket>&quot;Cynthia Voltz&quot;</bucket>
+              <bucket>&quot;Brendan Murry&quot;</bucket>
+              <bucket>&quot;Tim Taslimi&quot;</bucket>
+              <bucket>&quot;Tiffany House&quot;</bucket>
+              <bucket>&quot;Hilary Holden&quot;</bucket>
+              <bucket>&quot;Robert Barroso&quot;</bucket>
+              <bucket>&quot;Steven Ward&quot;</bucket>
+              <bucket>&quot;Mark Haberlin&quot;</bucket>
+              <bucket>&quot;Craig Yedwab&quot;</bucket>
+              <bucket>&quot;Rachel Payne&quot;</bucket>
+              <bucket>&quot;Aleksandra Gannaway&quot;</bucket>
+              <bucket>&quot;Muhammed MacIntyre&quot;</bucket>
+              <bucket>&quot;Jason Klamczynski&quot;</bucket>
+              <bucket>&quot;Michael Stewart&quot;</bucket>
+              <bucket>&quot;Tom Stivers&quot;</bucket>
+              <bucket>&quot;Brad Norvell&quot;</bucket>
+              <bucket>&quot;Laurel Workman&quot;</bucket>
+              <bucket>&quot;Guy Phonely&quot;</bucket>
+              <bucket>&quot;Beth Fritzler&quot;</bucket>
+              <bucket>&quot;Nicole Brennan&quot;</bucket>
+              <bucket>&quot;Fred Wasserman&quot;</bucket>
+              <bucket>&quot;Phillip Breyer&quot;</bucket>
+              <bucket>&quot;Ed Braxton&quot;</bucket>
+              <bucket>&quot;Greg Guthrie&quot;</bucket>
+              <bucket>&quot;Anthony O&apos;Donnell&quot;</bucket>
+              <bucket>&quot;Barry Blumstein&quot;</bucket>
+              <bucket>&quot;George Bell&quot;</bucket>
+              <bucket>&quot;Jason Gross&quot;</bucket>
+              <bucket>&quot;Carl Jackson&quot;</bucket>
+              <bucket>&quot;Lela Donovan&quot;</bucket>
+              <bucket>&quot;Karen Seio&quot;</bucket>
+              <bucket>&quot;Mitch Gastineau&quot;</bucket>
+              <bucket>&quot;Susan Gilcrest&quot;</bucket>
+              <bucket>&quot;Michael Dominguez&quot;</bucket>
+              <bucket>&quot;Odella Nelson&quot;</bucket>
+              <bucket>&quot;Bill Stewart&quot;</bucket>
+              <bucket>&quot;Vivek Grady&quot;</bucket>
+              <bucket>&quot;Erin Ashbrook&quot;</bucket>
+              <bucket>&quot;Dionis Lloyd&quot;</bucket>
+              <bucket>&quot;Jim Sink&quot;</bucket>
+              <bucket>&quot;Alyssa Crouse&quot;</bucket>
+              <bucket>&quot;Edward Becker&quot;</bucket>
+              <bucket>&quot;David Wiener&quot;</bucket>
+              <bucket>&quot;Gene Hale&quot;</bucket>
+              <bucket>&quot;Allen Rosenblatt&quot;</bucket>
+              <bucket>&quot;Sibella Parks&quot;</bucket>
+              <bucket>&quot;Eleni McCrary&quot;</bucket>
+              <bucket>&quot;Katherine Nockton&quot;</bucket>
+              <bucket>&quot;Andy Gerbode&quot;</bucket>
+              <bucket>&quot;Jill Stevenson&quot;</bucket>
+              <bucket>&quot;Kelly Lampkin&quot;</bucket>
+              <bucket>&quot;Alex Russell&quot;</bucket>
+              <bucket>&quot;Noel Staavos&quot;</bucket>
+              <bucket>&quot;Matthew Clasen&quot;</bucket>
+              <bucket>&quot;Thea Hudgings&quot;</bucket>
+              <bucket>&quot;Aaron Smayling&quot;</bucket>
+              <bucket>&quot;Dorothy Wardle&quot;</bucket>
+              <bucket>&quot;Stefania Perrino&quot;</bucket>
+              <bucket>&quot;Ann Blume&quot;</bucket>
+              <bucket>&quot;Elpida Rittenbach&quot;</bucket>
+              <bucket>&quot;Cindy Schnelling&quot;</bucket>
+              <bucket>&quot;Linda Southworth&quot;</bucket>
+              <bucket>&quot;Cyma Kinney&quot;</bucket>
+              <bucket>&quot;Maureen Fritzler&quot;</bucket>
+              <bucket>&quot;Noah Childs&quot;</bucket>
+              <bucket>&quot;Muhammed Yedwab&quot;</bucket>
+              <bucket>&quot;Alan Haines&quot;</bucket>
+              <bucket>&quot;Lisa Ryan&quot;</bucket>
+              <bucket>&quot;Michael Kennedy&quot;</bucket>
+              <bucket>&quot;Darrin Van Huff&quot;</bucket>
+              <bucket>&quot;Stewart Carmichael&quot;</bucket>
+              <bucket>&quot;Victoria Wilson&quot;</bucket>
+              <bucket>&quot;Victoria Pisteka&quot;</bucket>
+              <bucket>&quot;David Bremer&quot;</bucket>
+              <bucket>&quot;Christine Phan&quot;</bucket>
+              <bucket>&quot;Sean Braxton&quot;</bucket>
+              <bucket>&quot;Henry Goldwyn&quot;</bucket>
+              <bucket>&quot;Grant Thornton&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Segment:nk]'>
+            <groupfilter function='member' level='[none:Segment:nk]' member='&quot;Corporate&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Segment:nk]</column>
+            <column>[federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Customer Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Customer Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03yp4jl1kgd5od12dei860zn8xe7].[sum:Profit:qk]</rows>
+        <cols>[federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Customer Name:nk]</cols>
+      </table>
+      <simple-id uuid='{F43CD21A-FB04-444F-A4CC-FB04BC17607C}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>top 3 products</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Orders+ (Sample - Superstore)' name='federated.03yp4jl1kgd5od12dei860zn8xe7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03yp4jl1kgd5od12dei860zn8xe7'>
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sub-Category]' role='dimension' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sub-Category]' derivation='None' name='[none:Sub-Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Sub-Category:nk]'>
+            <groupfilter count='3' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Profit])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:Sub-Category:nk]' />
+                  <groupfilter function='member' level='[none:Sub-Category:nk]' member='%null%' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Sub-Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.03yp4jl1kgd5od12dei860zn8xe7].[sum:Profit:qk]</rows>
+        <cols>([federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Sub-Category:nk] / [federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Region:nk])</cols>
+      </table>
+      <simple-id uuid='{897EEB94-AB93-4944-B0B5-8E4FD3F478B8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='18' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='6' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='98000' id='4' type-v2='layout-basic' w='98400' x='800' y='1000'>
+                <zone h='49000' id='1' name='Sheet 1' w='24600' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49000' id='3' name='Sheet 2' w='24600' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49000' id='8' name='Sheet 3' w='24600' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49000' id='10' name='Sheet 4' w='49200' x='50000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49000' id='11' name='Sheet 5' w='24600' x='25400' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49000' id='12' name='Sheet 6' w='24600' x='25400' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='49000' id='14' name='Sheet 7' w='24600' x='74600' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout active='true' name='Desktop'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='18' param='horz' type-v2='layout-flow' w='99166' x='417' y='1000'>
+                <zone h='98000' id='6' param='horz' type-v2='layout-flow' w='99166' x='417' y='1000'>
+                  <zone h='98000' id='4' type-v2='layout-basic' w='99166' x='417' y='1000'>
+                    <zone h='49000' id='1' name='Sheet 1' w='24791' x='417' y='1000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='49000' id='3' name='Sheet 2' w='24791' x='50000' y='1000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='49000' id='8' name='Sheet 3' w='24791' x='417' y='50000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='49000' id='10' name='Sheet 4' w='49583' x='50000' y='50000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='49000' id='11' name='Sheet 5' w='24792' x='25208' y='1000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='49000' id='12' name='Sheet 6' w='24792' x='25208' y='50000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='49000' id='14' name='Sheet 7' w='24792' x='74791' y='1000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2050' minheight='2050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99220' id='19' param='vert' type-v2='layout-flow' w='95734' x='2133' y='390'>
+                <zone fixed-size='280' h='14049' id='1' is-fixed='true' name='Sheet 1' w='95734' x='2133' y='390'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='14049' id='11' is-fixed='true' name='Sheet 5' w='95734' x='2133' y='14439'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='14049' id='3' is-fixed='true' name='Sheet 2' w='95734' x='2133' y='28488'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='14049' id='14' is-fixed='true' name='Sheet 7' w='95734' x='2133' y='42537'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='14049' id='8' is-fixed='true' name='Sheet 3' w='95734' x='2133' y='56586'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='14049' id='12' is-fixed='true' name='Sheet 6' w='95734' x='2133' y='70635'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='14049' id='10' is-fixed='true' name='Sheet 4' w='95734' x='2133' y='84684'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5C8FA9B6-B42E-45CA-A13D-529B5A057A6A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AF864858-4DE6-4D93-A647-CDA063963B10}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 7'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='14' />
+      <grid grid-overlay-mode='on' />
+      <simple-id uuid='{FC6758CF-7F92-434F-94C6-A6F90E95C549}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03yp4jl1kgd5od12dei860zn8xe7].[sum:Sales:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{49871371-65F0-4F83-9C8F-4C452521153D}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03yp4jl1kgd5od12dei860zn8xe7].[sum:Discount:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC67A23E-2171-4B83-9389-21736CD92BB6}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{41531B6F-F28D-430F-847D-1AA8A71FC165}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{97DCF70D-B6E3-4A1D-9E06-D8F288E05754}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Customer Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4693145F-C2A5-4A71-9A75-A71F051D100D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03yp4jl1kgd5od12dei860zn8xe7].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{769B2675-8FAA-4BF9-B317-6F21BF61DF8E}' />
+    </window>
+  </windows>
+</workbook>
